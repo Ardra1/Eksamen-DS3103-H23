@@ -1,0 +1,125 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/css/index.css",
+      "PackagePath": "staticwebassets/css/index.css"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/F1Icon.png",
+      "PackagePath": "staticwebassets/images/F1Icon.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/cars/AstonMartin.png",
+      "PackagePath": "staticwebassets/images/cars/AstonMartin.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/cars/Ferrari.png",
+      "PackagePath": "staticwebassets/images/cars/Ferrari.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/cars/McLaren.png",
+      "PackagePath": "staticwebassets/images/cars/McLaren.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/cars/Mercedes.png",
+      "PackagePath": "staticwebassets/images/cars/Mercedes.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/cars/Redbull.png",
+      "PackagePath": "staticwebassets/images/cars/Redbull.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/cars/Williams.png",
+      "PackagePath": "staticwebassets/images/cars/Williams.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Albon.png",
+      "PackagePath": "staticwebassets/images/drivers/Albon.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Alonso.png",
+      "PackagePath": "staticwebassets/images/drivers/Alonso.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Gasly.png",
+      "PackagePath": "staticwebassets/images/drivers/Gasly.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Hamilton.png",
+      "PackagePath": "staticwebassets/images/drivers/Hamilton.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Leclerc.png",
+      "PackagePath": "staticwebassets/images/drivers/Leclerc.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/No image.jpeg",
+      "PackagePath": "staticwebassets/images/drivers/No image.jpeg"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Norris.png",
+      "PackagePath": "staticwebassets/images/drivers/Norris.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Ocon.png",
+      "PackagePath": "staticwebassets/images/drivers/Ocon.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Perez.png",
+      "PackagePath": "staticwebassets/images/drivers/Perez.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Piastri.png",
+      "PackagePath": "staticwebassets/images/drivers/Piastri.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Russell.png",
+      "PackagePath": "staticwebassets/images/drivers/Russell.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Sainz.png",
+      "PackagePath": "staticwebassets/images/drivers/Sainz.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Sargeant.png",
+      "PackagePath": "staticwebassets/images/drivers/Sargeant.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Stroll.png",
+      "PackagePath": "staticwebassets/images/drivers/Stroll.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/images/drivers/Verstappen.png",
+      "PackagePath": "staticwebassets/images/drivers/Verstappen.png"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/script/driver-example.js",
+      "PackagePath": "staticwebassets/script/driver-example.js"
+    },
+    {
+      "Id": "/Users/ardit/Desktop/Eksamen DS3103 H23 2/FormulaOneAPI/wwwroot/script/modules/driverModule.js",
+      "PackagePath": "staticwebassets/script/modules/driverModule.js"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.FormulaOneAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.FormulaOneAPI.props",
+      "PackagePath": "build\\FormulaOneAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.FormulaOneAPI.props",
+      "PackagePath": "buildMultiTargeting\\FormulaOneAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.FormulaOneAPI.props",
+      "PackagePath": "buildTransitive\\FormulaOneAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

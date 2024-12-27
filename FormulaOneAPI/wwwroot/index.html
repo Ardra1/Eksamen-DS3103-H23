@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/F1Icon.png">
+    
+    <title>FormulaOne-API</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    
+    <script type="module" src="./script/driver-example.js"></script>
+</head>
+<body>
+    <header class="container-fluid p-0">
+        <nav class="bg-dark navbar d-flex justify-content-end pe-5">
+            <ul class="nav column-gap-5 ">
+                <li><a class="nav-item text-white fs-2 link-underline link-underline-opacity-0" href="#driver">Drivers</a></li>
+                <li><a class="nav-item text-white fs-2 link-underline link-underline-opacity-0" href="#team">Teams</a></li>
+            </ul>
+        </nav>
+        <section class="container">
+            <h2 class="py-4">Hvordan bruke Web API</h2>
+        </section>
+    </header>
+
+    <main class="container mt-3">
+        <h3>Introduksjon</h3>
+        <p>Med denne siden viser vi hvordan du bruker Formel 1 API, slik at du får tak i det du trenger!</p>
+
+        <h6 class="mb-1">Vi har to APIer:</h6>
+        <ul>
+            <li><strong>Drivers</strong> brukes for å få tak i alle drivers</li>
+            <li><strong>Teams</strong> brukes for å få tak i alle teams</li>
+        </ul>
+
+        <section class="pb-5">
+            <h3 id="driver">Drivers</h3>
+            <p>Det er totalt <strong>16</strong> drivers i listen, som er sortert med id.</p>
+            <p>Hvert driver-objekt inneholder denne informasjonen:</p>
+            
+            <table class="table">
+                <tr>
+                    <th>Nøkkel</th>
+                    <th>Type</th>
+                    <th>Beskrivelse</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>int</td>
+                    <td>ID til fører</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>Navnet til fører</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>int</td>
+                    <td>Alderen til fører</td>
+                </tr>
+                <tr>
+                    <td>nationality</td>
+                    <td>string</td>
+                    <td>Nasjonaliteten til fører</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>string (url)</td>
+                    <td>Bilde av fører</td>
+                </tr>
+            </table>
+
+            <p>Det er flere ting man kan gjøre med en driver:</p>
+            <ul>
+                <li>POST brukes for å legge til en ny driver i databasen, malen er /api/Drivers</li>
+                <li>PUT brukes for å endre et eksisterende team i databasen, malen er /api/Drivers</li>
+                <li>DELETE brukes for å slette et team fra databasen, malen er /api/Drivers/{id}</li>
+                <br>
+                <li>POST brukes for å legge til bilde av driver i databasen, malen /api/ImageUpload</li>
+            </ul>
+            
+            <h5>En driver kan se slik ut:</h5>
+            <article class=" rounded mb-3" id="driver-example">
+               <!-- Fra driver-example.js -->
+            </article>
+
+            <article class="col-12">
+                <h5>Hente alle drivers</h5>
+                <p>Malen for å hente alle drivers er api/Drivers.</p>
+                <div class="box-top rounded-top bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">GET <a class="text-info" href="https://localhost:5100/api/Drivers">https://localhost:5100/api/<strong>Drivers</strong></a></p>
+                </div>
+                
+                <div class="box-bottom rounded-bottom bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">
+                        [ <br>
+                            {"id":1,"name":"Max Verstappen","age":26,"nationality":"Netherlands","image":"Verstappen.png"}, <br>
+                            {"id":2,"name":"Sergio Perez","age":33,"nationality":"Mexico","image":"Perez.png"}, <br>
+                            // ... <br>
+                        ]
+                    </p>
+                </div>
+            </article>
+
+            <article class="col-12">
+                <h5>Hente en driver med id</h5>
+                <p>Malen for å hente en driver med id er api/Drivers/{id}.</p>
+                <div class="box-top rounded-top bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">GET <a class="text-info" href="https://localhost:5100/api/Drivers/1">https://localhost:5100/api/Drivers/<strong>1</strong></a></p>
+                </div>
+                
+                <div class="box-bottom rounded-bottom bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">
+                        [ <br>
+                            {"id":1,"name":"Max Verstappen","age":26,"nationality":"Netherlands","image":"Verstappen.png"} <br>
+                        ]
+                    </p>
+                </div>
+            </article>
+
+            <article class="col-12">
+                <h5>Hente en driver med navn</h5>
+                <p>Malen for å hente en driver med navn er api/Drivers/GetDriverByName/{name}.</p>
+                <div class="box-top rounded-top bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">GET <a class="text-info text-break" href="http://localhost:5100/api/drivers/getdriverbyname/Max%20Verstappen">http://localhost:5100/api/Drivers/GetDriverByName/<strong>Max%20Verstappen</strong></a></p>
+                </div>
+                
+                <div class="box-bottom rounded-bottom bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">
+                        [ <br>
+                            {"id":1,"name":"Max Verstappen","age":26,"nationality":"Netherlands","image":"Verstappen.png"} <br>
+                        ]
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h3 id="team">Teams</h3>
+            <p>Det er totalt <strong>6</strong> teams i listen, som er sortert med id.</p>
+            <p>Hvert team-objekt inneholder denne informasjonen:</p>
+            
+            <table class="table">
+                <tr>
+                    <th>Nøkkel</th>
+                    <th>Type</th>
+                    <th>Beskrivelse</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>int</td>
+                    <td>ID til teamet</td>
+                </tr>
+                <tr>
+                    <td>manufacturer</td>
+                    <td>string</td>
+                    <td>Navnet til teamet</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>string (url)</td>
+                    <td>Bilde av bilen til teamet</td>
+                </tr>
+                <tr>
+                    <td>driverone</td>
+                    <td>string</td>
+                    <td>Fører 1 i teamet</td>
+                </tr>
+                <tr>
+                    <td>drivertwo</td>
+                    <td>string</td>
+                    <td>Fører 2 i teamet</td>
+                </tr>
+            </table>
+
+            <p>Det er flere ting man kan gjøre med et team:</p>
+            <ul>
+                <li>POST brukes for å legge til et nytt team i databasen, malen er /api/Teams</li>
+                <li>PUT brukes for å endre et eksisterende team i databasen, malen er /api/Teams/PutUpdateTeam/{manufacturer}</li>
+                <li class="text-break">DELETE brukes for å slette et team fra databasen, malen er /api/Teams/DeleteTeamByManufacturer/{manufacturer}</li>
+                <br>
+                <li class="text-break">POST brukes for å legge til bilde av bilen til teamet i databasen, malen /api/ImageUpload/PostUploadCarImage</li>
+            </ul>
+            
+            <article class="col-12">
+                <h5>Hente alle team</h5>
+                <p>Malen for å hente alle team er api/Teams.</p>
+                <div class="box-top rounded-top bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">GET <a class="text-info" href="https://localhost:5100/api/Teams">https://localhost:5100/api/<strong>Teams</strong></a></p>
+                </div>
+                
+                <div class="box-bottom rounded-bottom bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">
+                        [ <br>
+                            {"id":1,"manufacturer":"Redbull","image":"Redbull.png","driverOne":"Max Verstappen","driverTwo":"Sergio Perez"}, <br>
+                            {"id":2,"manufacturer":"Mercedes","image":"Mercedes.png","driverOne":"Lewis Hamilton","driverTwo":"George Russell"}, <br>
+                            // ... <br>
+                        ]
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="col-12">
+                <h5>Hente et team med id</h5>
+                <p>Malen for å hente et team med id er api/Teams/{id}.</p>
+                <div class="box-top rounded-top bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">GET <a class="text-info" href="https://localhost:5100/api/Teams/1">https://localhost:5100/api/Teams/<strong>1</strong></a></p>
+                </div>
+                
+                <div class="box-bottom rounded-bottom bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">
+                        [ <br>
+                            {"id":1,"manufacturer":"Redbull","image":"Redbull.png","driverOne":"Max Verstappen","driverTwo":"Sergio Perez"}, <br>
+                        ]
+                    </p>
+                </div>
+            </article>
+
+            <article class="col-12">
+                <h5>Hente et team med navn</h5>
+                <p>Malen for å hente et team med navn er api/Teams/GetTeamByManufacturer/{manufacturer}.</p>
+                <div class="box-top rounded-top bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">GET <a class="text-info text-break" href="http://localhost:5100/api/teams/getteambymanufacturer/Redbull">http://localhost:5100/api/Teams/GetTeamByManufacturer/<strong>Redbull</strong></a></p>
+                </div>
+                
+                <div class="box-bottom rounded-bottom bg-dark d-flex align-items-center col-12">
+                    <p class="text-light text-break">
+                        [ <br>
+                            {"id":1,"manufacturer":"Redbull","image":"Redbull.png","driverOne":"Max Verstappen","driverTwo":"Sergio Perez"}, <br>
+                        ]
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

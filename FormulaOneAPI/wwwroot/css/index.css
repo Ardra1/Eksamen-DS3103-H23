@@ -1,0 +1,11 @@
+.box-top {
+    padding: 25px;
+    width: 80vw;
+    border-bottom: white solid 1px;
+}
+
+.box-bottom {
+    width: 80vw;
+    padding: 30px;
+    margin-bottom: 20px;
+}
